@@ -1,0 +1,74 @@
+<div class="price-list">
+  <h2>Ceník služeb</h2>
+  <div class="price-item">
+    <span class="service">Výměna displeje</span>
+    <span class="price">600 - 900 Kč</span>
+  </div>
+  <div class="price-item">
+    <span class="service">Výměna baterie</span>
+    <span class="price">400 - 600 Kč</span>
+  </div>
+  <div class="price-item">
+    <span class="service">Čištění</span>
+    <span class="price">50 - 100 Kč</span>
+  </div>
+  <div class="price-item">
+    <span class="service">Ostatní</span>
+    <span class="price">Cena dle domluvy</span>
+  </div>
+</div>
+
+<style>
+body {
+  background: linear-gradient(135deg, #0d0d0d, #001f3f);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.price-list {
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  padding: 30px 40px;
+  width: 320px;
+  color: #fff;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.price-list:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+}
+
+.price-list h2 {
+  margin-bottom: 25px;
+  font-size: 1.8em;
+  color: #00aaff;
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.price-item:last-child {
+  border-bottom: none;
+}
+
+.service {
+  font-weight: 600;
+}
+
+.price {
+  font-weight: 400;
+  color: #00aaff;
+}
+</style>
